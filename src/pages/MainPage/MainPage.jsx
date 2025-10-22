@@ -87,7 +87,7 @@ export const MainPage = () => {
             <li>intellidriver@gmail.com</li>
             <li>@intellidriverml</li>
           </ul>
-          <span className='mb-5'>Copyright © 2025</span>
+          <span className='mb-5'>Copyright © 2025</span>
         </div>
       </Section>
     </main>
