@@ -1,12 +1,17 @@
 $primary: #51663e;
 $secondary: #adbba0;
 $tertiary: #7f9170;
+$accent: #2a3c1a;
+$extra-1: #0a6a57;
+$extra-2: #60aa5f;
 
 $theme-colors: (
   primary: $primary,
   secondary: $secondary,
   tertiary: $tertiary,
-  accent: #abf479,
+  accent: $accent,
+  extra-1: $extra-1,
+  extra-2: $extra-2,
   success: #28a745,
   info: #17a2b8,
   warning: #ffc107,
@@ -21,6 +26,10 @@ $theme-colors: (
 
 .poppins {
   font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 6rem;
 }
 
 // coiso obscuro que achei, coloca um offset do scroll, para alinhar o conteudo com o header, ao inves de o ignorar
@@ -39,6 +48,12 @@ body {
   top: 146px;
 }
 
+.fill {
+  flex-shrink: 0;
+  height: 100%;
+  float: right;
+}
+
 .nav-link {
   color: $primary !important;
   transition: scale color ease-in-out 0.1s;
@@ -46,10 +61,31 @@ body {
 
 .nav-link:hover {
   scale: 1.05;
-  color: darken($color: $primary, $amount: 10%) !important;
+  color: darken($color: $primary, $amount: 10%) !important
 }
 
-.nav-link.active {
-  font-weight: 600;
-  color: darken($color: $primary, $amount: 15%) !important;
+.target-image {
+  max-width: 75vw;
+}
+
+// customização do acordeão, já que ele é bem travado por padrão
+.accordion {
+  --bs-accordion-border-color: #51663e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.accordion-button {
+  background-color: $accent;
+  color: $light;
+  font-size: x-large;
+  border: 0
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: lighten($color: $accent, $amount: 3%);
+  color: $light;
+}
+
+.accordion-body {
+  background-color: $accent;
 }
