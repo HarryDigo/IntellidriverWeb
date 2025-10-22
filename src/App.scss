@@ -1,0 +1,55 @@
+$primary: #51663e;
+$secondary: #adbba0;
+$tertiary: #7f9170;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  accent: #abf479,
+  success: #28a745,
+  info: #17a2b8,
+  warning: #ffc107,
+  danger: #dc3545,
+  light: #fdfdfd,
+  dark: #343a40 
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+// coiso obscuro que achei, coloca um offset do scroll, para alinhar o conteudo com o header, ao inves de o ignorar
+html {
+  scroll-padding-top: 146px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: $secondary;
+}
+
+.main-page {
+  position: relative;
+  top: 146px;
+}
+
+.nav-link {
+  color: $primary !important;
+  transition: scale color ease-in-out 0.1s;
+}
+
+.nav-link:hover {
+  scale: 1.05;
+  color: darken($color: $primary, $amount: 10%) !important;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: darken($color: $primary, $amount: 15%) !important;
+}
