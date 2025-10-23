@@ -1,5 +1,5 @@
 export * from './AboutCard'
 export * from './Header'
 export * from './Leaderboard'
-export * from './ObjetiveAcordion'
+export * from './ObjectiveAcordion'
 export * from './Section'

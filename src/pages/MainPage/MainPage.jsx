@@ -1,7 +1,7 @@
-import { Row, Col } from 'react-bootstrap'
 import { AboutCard, Leaderboard, ObjectiveAccordion, Section } from '@components'
+import { Col, Row } from 'react-bootstrap'
 
-import { contato_bg, guerra, phone, qr_template, rag, target } from '@assets'
+import { contato_bg, guerra, luna, phone, qr_template, rag, target } from '@assets'
 
 export const MainPage = () => {
   return (
@@ -66,7 +66,7 @@ export const MainPage = () => {
             </AboutCard>
           </Col>
           <Col md={6} lg={4} className='d-flex justify-content-center mt-5 mt-lg-0'>
-            <AboutCard image={guerra}>
+            <AboutCard image={luna}>
               <h3 className='text-center fw-semibold'>Luna Scatolin Flora do Rio</h3>
                 <p className='fs-5'>
                   Simulou o IntelliDriver com técnicas de Sistemas Embarcados.
